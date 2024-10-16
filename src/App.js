@@ -35,6 +35,8 @@ const RegistrationPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Registration: ', { username, email, phone, dob, password });
+
+    window.location.href = 'https://loginburaconegro.vercel.app/';
   };
 
   return (
@@ -42,12 +44,12 @@ const RegistrationPage = () => {
       {stars}
       <div className="pulsing-ball"></div>
       <form onSubmit={handleSubmit} className="rectangle">
-        {/* Red = Title */}
+
         <div className="square red">
           <h2 className="title">Registro</h2>
         </div>
 
-        {/* Pink = Username */}
+  
         <div className="square pink">
           <div className="inputGroup">
             <label className="label" htmlFor="username"></label>
@@ -63,7 +65,7 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Orange = Email */}
+
         <div className="square orange">
           <div className="inputGroup">
             <label className="label" htmlFor="email"></label>
@@ -79,7 +81,7 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Yellow = Phone */}
+
         <div className="square yellow">
           <div className="inputGroup">
             <label className="label" htmlFor="phone"></label>
@@ -95,7 +97,6 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Green = Date of Birth */}
         <div className="square green">
           <div className="inputGroup">
             <label className="label" htmlFor="dob"></label>
@@ -110,7 +111,6 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Purple = Password */}
         <div className="square purple">
           <div className="inputGroup">
             <label className="label" htmlFor="password"></label>
@@ -126,7 +126,7 @@ const RegistrationPage = () => {
           </div>
         </div>
 
-        {/* Button */}
+   
         <div className="square brown-rectangle">
           <button type="submit" className="button">
             Registrar
