@@ -159,7 +159,7 @@ body {
   transition: 0.5s;
 }
 
-/* Media Query for screens smaller than 850px */
+
 @media screen and (max-width: 850px) {
   .rectangle {
     width: 90vw;
